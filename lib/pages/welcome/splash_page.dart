@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import 'package:rhodopis/constants/app_constants.dart';
+import 'package:rhodopis/constants/app_routes.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -8,15 +12,21 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
+    
+    // 设置顶部状态栏透明
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
+      statusBarColor: Colors.transparent,
+    ));
+
     return Container(
       color: Colors.white,
       alignment: Alignment.topCenter,
       child: Container(
-        margin: EdgeInsets.only(top: 150.0),
+        margin: EdgeInsets.only(top: 120.0),
         child: Image.asset(
           'assets/images/icon.png',
-          width: 100.0,
-          height: 100.0,
+          width: AppContants.WelcomeIconSize,
+          height: AppContants.WelcomeIconSize,
         ),
       ),
     );
@@ -32,7 +42,7 @@ class _SplashPageState extends State<SplashPage> {
   void countDown() {
     var _duration = Duration(seconds: 3);
     Future.delayed(_duration, () {
-      // Navigator.pushReplacementNamed(context, Routes.Welcome);
+      Navigator.pushReplacementNamed(context, AppRoutes.login);
     });
   }
 }
