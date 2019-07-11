@@ -25,8 +25,8 @@ class _SplashPageState extends State<SplashPage> {
         margin: EdgeInsets.only(top: 120.0),
         child: Image.asset(
           'assets/images/icon.png',
-          width: AppContants.WelcomeIconSize,
-          height: AppContants.WelcomeIconSize,
+          width: AppConstants.WelcomeIconSize,
+          height: AppConstants.WelcomeIconSize,
         ),
       ),
     );
@@ -42,7 +42,7 @@ class _SplashPageState extends State<SplashPage> {
   void countDown() {
     var _duration = Duration(seconds: 3);
     Future.delayed(_duration, () {
-      Navigator.pushReplacementNamed(context, AppRoutes.login);
+      Navigator.pushReplacementNamed(context, AppRoutes.Login);
     });
   }
 }

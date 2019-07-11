@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rhodopis/constants/app_colors.dart';
 
 import 'package:rhodopis/constants/app_routes.dart';
+import 'package:rhodopis/pages/home/home_page.dart';
 import 'package:rhodopis/pages/welcome/login_page.dart';
 import 'package:rhodopis/pages/welcome/splash_page.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       ),
       home: SplashPage(),
       routes: {
-        AppRoutes.login: (context) => LoginPage(),
+        AppRoutes.Login: (context) => LoginPage(),
+        AppRoutes.Home: (context) => HomePage(),
       },
     );
   }

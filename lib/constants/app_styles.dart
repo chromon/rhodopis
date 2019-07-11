@@ -33,4 +33,10 @@ class AppStyles {
     fontSize: 18.0,
     color: Color(AppColors.PrimaryColor)
   );
+
+  // 主页 appbar 标题样式
+  static const TitleTextStyle = TextStyle(
+    fontSize: 16.0,
+    color: Color(AppColors.TitleTextColor)
+  );
 }

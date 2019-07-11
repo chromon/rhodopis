@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:rhodopis/constants/app_constants.dart';
 import 'package:rhodopis/constants/app_styles.dart';
 import 'package:rhodopis/constants/app_colors.dart';
+import 'package:rhodopis/constants/app_routes.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -35,8 +36,8 @@ class _LoginPageState extends State<LoginPage> {
                   children: <Widget>[
                     Image.asset(
                       'assets/images/icon.png',
-                      width: AppContants.WelcomeIconSize,
-                      height: AppContants.WelcomeIconSize,
+                      width: AppConstants.WelcomeIconSize,
+                      height: AppConstants.WelcomeIconSize,
                     ),
                     SizedBox(height: 20.0,),
                     Text('微信读书', style: AppStyles.WelcomeTitleStyle,),
@@ -55,12 +56,12 @@ class _LoginPageState extends State<LoginPage> {
                         child: MaterialButton(
                           color: Color(AppColors.PrimaryColor),
                           height: 54.0,
-                          child: Text('下一步', style: TextStyle(fontSize: 18.0, color: Colors.white),),
+                          child: Text('微信登录', style: TextStyle(fontSize: 18.0, color: Colors.white),),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.all(Radius.circular(10.0)),
                           ),
                           onPressed: () {
-                            // Navigator.pushNamedAndRemoveUntil(context, Routes.Home, (Route<dynamic> route) => false);
+                            Navigator.pushNamedAndRemoveUntil(context, AppRoutes.Home, (Route<dynamic> route) => false);
                           },
                         ),
                       ), 
