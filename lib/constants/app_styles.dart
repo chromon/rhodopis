@@ -37,6 +37,14 @@ class AppStyles {
   // 主页 appbar 标题样式
   static const TitleTextStyle = TextStyle(
     fontSize: 16.0,
-    color: Color(AppColors.TitleTextColor)
+    color: Color(AppColors.TitleTextColor),
+    fontWeight: FontWeight.bold,
+  );
+
+  // 主页 appbar actions 字体样式
+  static const ActionsTitleTextStyle = TextStyle(
+    fontSize: 16.0,
+    color: Color(AppColors.ActionsTitleTextColor),
+    fontWeight: FontWeight.bold,
   );
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:rhodopis/constants/app_styles.dart';
+import 'package:rhodopis/widget/appbar_widget.dart';
 
 import 'package:rhodopis/widget/navigation_item_widget.dart';
 import 'package:rhodopis/constants/app_constants.dart';
@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   // 当前页索引
-  int _currentIndex = 0;
+  int _currentIndex = 1;
   // 底部导航图标 widget
   List<NavigationItemWidget> _navigationViews;
   // 用于管理滚动视图的状态
@@ -24,6 +24,8 @@ class _HomePageState extends State<HomePage> {
   List<Widget> _pageViews;
   // 顶部 Action bar 标题
   String actionBarTitle = '书架';
+  // appbar
+  AppbarWidget _appBar;
 
   @override
   void initState() {
@@ -94,6 +96,9 @@ class _HomePageState extends State<HomePage> {
           color: Colors.purple,
         ),
     ];
+
+    // 处理 appbar
+    _appBar = AppbarWidget(_currentIndex);
   }
 
   @override
@@ -128,16 +133,17 @@ class _HomePageState extends State<HomePage> {
     );
 
     return Scaffold(
-      appBar: AppBar(
-        // 标题栏名称
-        title: Text(actionBarTitle, style: AppStyles.TitleTextStyle,),
-        // 去掉 appbar 下面的阴影
-        elevation: 0.0,
-        brightness: Brightness.light,
-        backgroundColor: Colors.white,
-        centerTitle: true,
-      ),
-
+      // appBar: AppBar(
+      //   // 标题栏名称
+      //   title: Text(actionBarTitle, style: AppStyles.TitleTextStyle,),
+      //   // 去掉 appbar 下面的阴影
+      //   elevation: 0.0,
+      //   brightness: Brightness.light,
+      //   backgroundColor: Colors.white,
+      //   centerTitle: true,
+      // ),
+      appBar: _appBar.appbarItem(),
+      
       // 中心页面内容
       body: PageView.builder(
         // 生成相应页面
@@ -152,8 +158,11 @@ class _HomePageState extends State<HomePage> {
           setState(() {
             // 左右滑动时与底部 tab 联动
             _currentIndex = index;
+            // 处理 appbar
+            _appBar = AppbarWidget(index);
           });
         },
+        physics: NeverScrollableScrollPhysics(),
       ),
 
       // 页面底部导航栏
