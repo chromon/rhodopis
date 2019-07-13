@@ -47,4 +47,10 @@ class AppStyles {
     color: Color(AppColors.ActionsTitleTextColor),
     fontWeight: FontWeight.bold,
   );
+
+  // 搜索框字体样式
+  static const SearchBarTextStyle = TextStyle(
+    fontSize: 16.0,
+    color: Color(AppColors.SearchBarTextColor),
+  );
 }

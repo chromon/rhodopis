@@ -16,4 +16,8 @@ class AppColors {
   static const TitleTextColor = 0xFF181818;
   // 主页 app bar actions 字体颜色
   static const ActionsTitleTextColor = 0xFF5D646E;
+  // search bar 背景颜色
+  static const SerchBarBgColor = 0xFFF7F8F9;
+  // search bar 字体颜色
+  static const SearchBarTextColor = 0xFF858C95;
 }

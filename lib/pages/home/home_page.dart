@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:rhodopis/pages/home/bookshelf_page.dart';
 import 'package:rhodopis/widget/appbar_widget.dart';
 
 import 'package:rhodopis/widget/navigation_item_widget.dart';
@@ -86,9 +87,7 @@ class _HomePageState extends State<HomePage> {
         Container(
           color: Colors.lightBlue,
         ),
-        Container(
-          color: Colors.red,
-        ),
+        BookshelfPage(),
         Container(
           color: Colors.green,
         ),
@@ -133,15 +132,6 @@ class _HomePageState extends State<HomePage> {
     );
 
     return Scaffold(
-      // appBar: AppBar(
-      //   // 标题栏名称
-      //   title: Text(actionBarTitle, style: AppStyles.TitleTextStyle,),
-      //   // 去掉 appbar 下面的阴影
-      //   elevation: 0.0,
-      //   brightness: Brightness.light,
-      //   backgroundColor: Colors.white,
-      //   centerTitle: true,
-      // ),
       appBar: _appBar.appbarItem(),
       
       // 中心页面内容
