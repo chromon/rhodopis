@@ -132,7 +132,7 @@ class _HomePageState extends State<HomePage> {
     );
 
     return Scaffold(
-      appBar: _appBar.appbarItem(),
+      appBar: _appBar.appbarItem(context),
       
       // 中心页面内容
       body: PageView.builder(

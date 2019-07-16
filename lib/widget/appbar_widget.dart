@@ -13,7 +13,7 @@ class AppbarWidget {
   // appbar
   PreferredSizeWidget _appbar;
 
-  PreferredSizeWidget appbarItem() {
+  PreferredSizeWidget appbarItem(BuildContext context) {
 
     switch (_index) {
       case 0:
@@ -35,9 +35,44 @@ class AppbarWidget {
           backgroundColor: Colors.white,
           centerTitle: true,
           actions: <Widget>[
-            FlatButton(
-              child: Text('编辑', style: AppStyles.ActionsTitleTextStyle,),
-              onPressed: () {},
+            IconButton(
+              icon: Icon(
+                IconData(
+                  0xe6be,
+                  fontFamily: AppConstants.IconFontsFamily,
+                ),
+                color: const Color(AppColors.IconNomalColor),
+              ),
+              onPressed: () {
+                showModalBottomSheet<void>(context: context, builder: (BuildContext context) {
+                  return Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Container(
+                        height: 200,
+                        width: double.infinity,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            RaisedButton(
+                                child: Text('确认'),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                }),
+                            RaisedButton(
+                                child: Text('取消'),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                })
+                          ],
+                        ),
+                      ),
+                    ),
+                  );
+                }).whenComplete(() {
+
+                });
+              },
             ),
           ],
         );
@@ -62,7 +97,6 @@ class AppbarWidget {
               ),
               onPressed: () {},
             ),
-            SizedBox(width: 16.0,),
           ],
         );
         break;
@@ -96,7 +130,6 @@ class AppbarWidget {
               ),
               onPressed: () {},
             ),
-            SizedBox(width: 16.0,),
           ],
         );
         break;
