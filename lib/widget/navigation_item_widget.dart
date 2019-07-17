@@ -12,7 +12,7 @@ class NavigationItemWidget {
     // 导航栏文字
     String title,
   }) : item = BottomNavigationBarItem(
-         icon: Icon(icon),
+         icon: Icon(icon,),
          activeIcon: Icon(activeIcon, color: Color(AppColors.NavigationIconActive),),
          title: Text(title),
        );  

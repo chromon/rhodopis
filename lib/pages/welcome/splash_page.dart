@@ -40,7 +40,7 @@ class _SplashPageState extends State<SplashPage> {
 
   // 倒计时
   void countDown() {
-    var _duration = Duration(seconds: 3);
+    var _duration = Duration(seconds: 0);
     Future.delayed(_duration, () {
       Navigator.pushReplacementNamed(context, AppRoutes.Login);
     });

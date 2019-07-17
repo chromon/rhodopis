@@ -58,14 +58,14 @@ class _HomePageState extends State<HomePage> {
       ),
       NavigationItemWidget(
         activeIcon: IconData(
-          0xe603,
+          0xe651,
           fontFamily: AppConstants.IconFontsFamily,
         ),
         icon: IconData(
-          0xe682,
+          0xe652,
           fontFamily: AppConstants.IconFontsFamily,
         ),
-        title: '消息',
+        title: '故事',
       ),
       NavigationItemWidget(
         activeIcon: IconData(
@@ -119,6 +119,7 @@ class _HomePageState extends State<HomePage> {
       currentIndex: _currentIndex,
       // 动画效果——宽度固定不变
       type: BottomNavigationBarType.fixed,
+      iconSize: 24.0,
       onTap: (int index) {
         // 重绘控件
         setState(() {

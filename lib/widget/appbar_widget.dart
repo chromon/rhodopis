@@ -38,10 +38,10 @@ class AppbarWidget {
             IconButton(
               icon: Icon(
                 IconData(
-                  0xe6be,
+                  0xe75f,
                   fontFamily: AppConstants.IconFontsFamily,
                 ),
-                color: const Color(AppColors.IconNomalColor),
+                color: const Color(AppColors.ActionsIconColor),
               ),
               onPressed: () {
                 showModalBottomSheet<void>(context: context, builder: (BuildContext context) {
@@ -80,7 +80,7 @@ class AppbarWidget {
       case 2:
         // 消息页
         _appbar = AppBar(
-          title: Text('消息', style: AppStyles.TitleTextStyle,),
+          title: Text('故事', style: AppStyles.TitleTextStyle,),
           elevation: 0.0,
           brightness: Brightness.light,
           backgroundColor: Colors.white,
@@ -93,7 +93,7 @@ class AppbarWidget {
                   fontFamily: AppConstants.IconFontsFamily,
                 ),
                 // size: ,
-                color: const Color(AppColors.IconNomalColor),
+                color: const Color(AppColors.ActionsIconColor),
               ),
               onPressed: () {},
             ),
@@ -110,7 +110,7 @@ class AppbarWidget {
                 0xe63d,
                 fontFamily: AppConstants.IconFontsFamily,
               ),
-              color: const Color(AppColors.IconNomalColor),
+              color: const Color(AppColors.ActionsIconColor),
             ),
             onPressed: () {},
           ),
@@ -126,7 +126,7 @@ class AppbarWidget {
                   fontFamily: AppConstants.IconFontsFamily,
                 ),
                 // size: ,
-                color: const Color(AppColors.IconNomalColor),
+                color: const Color(AppColors.ActionsIconColor),
               ),
               onPressed: () {},
             ),
