@@ -53,4 +53,21 @@ class AppStyles {
     fontSize: 16.0,
     color: Color(AppColors.SearchBarTextColor),
   );
+
+  // 故事页点赞用户名字体样式
+  static const StoryLikeNameStyle = TextStyle(
+    fontSize: 14.0,
+    color: Color(AppColors.StoryLikeTitleColor),
+  );
+
+  // 故事页点赞标题 赞过字体样式
+  static const StoryLikedStyle = TextStyle(
+    fontSize: 14.0,
+    color: Color(AppColors.StoryLikeColor),
+  );
+
+  static const StoryLikeNameBlueStyle = TextStyle(
+    fontSize: 14.0,
+    color: Color(AppColors.StoryLikeTitleBlueColor),
+  );
 }

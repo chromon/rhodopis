@@ -22,4 +22,8 @@ class AppColors {
   static const SerchBarBgColor = 0xFFF7F8F9;
   // search bar 字体颜色
   static const SearchBarTextColor = 0xFF858C95;
+  // 故事页点赞标题字体颜色
+  static const StoryLikeTitleColor = 0xFF99A0AA;
+  static const StoryLikeColor = 0xFFC1C6CD;
+  static const StoryLikeTitleBlueColor = 0xFF547FB0;
 }

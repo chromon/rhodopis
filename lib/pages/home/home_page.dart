@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rhodopis/pages/home/bookshelf_page.dart';
+import 'package:rhodopis/pages/home/story_page.dart';
 import 'package:rhodopis/widget/appbar_widget.dart';
 
 import 'package:rhodopis/widget/navigation_item_widget.dart';
@@ -88,9 +89,7 @@ class _HomePageState extends State<HomePage> {
           color: Colors.lightBlue,
         ),
         BookshelfPage(),
-        Container(
-          color: Colors.green,
-        ),
+        StoryPage(),
         Container(
           color: Colors.purple,
         ),
