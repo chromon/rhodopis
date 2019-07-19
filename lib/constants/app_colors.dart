@@ -26,4 +26,8 @@ class AppColors {
   static const StoryLikeTitleColor = 0xFF99A0AA;
   static const StoryLikeColor = 0xFFC1C6CD;
   static const StoryLikeTitleBlueColor = 0xFF547FB0;
+  // 引用背景颜色
+  static const QuoteBgColor = 0xFFF4F5F7;
+  // 点赞红心背景颜色
+  static const LikeHeartColor = 0xFFFF6179;
 }

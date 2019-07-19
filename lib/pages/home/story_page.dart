@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rhodopis/widget/interaction_widget.dart';
+import 'package:rhodopis/widget/interaction_item_widget.dart';
 
 class StoryPage extends StatefulWidget {
   @override
@@ -14,7 +14,7 @@ class _StoryPageState extends State<StoryPage> {
       body: Container(
         child: ListView.builder(
           itemBuilder: (BuildContext  context, int index) {
-            return InteractionWidget();
+            return InteractionItemWidget();
           },
           itemCount: 1,
           physics: NeverScrollableScrollPhysics(),

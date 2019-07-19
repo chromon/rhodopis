@@ -70,4 +70,16 @@ class AppStyles {
     fontSize: 14.0,
     color: Color(AppColors.StoryLikeTitleBlueColor),
   );
+
+  // 引用内容字体样式
+  static const QuoteContentStyle = TextStyle(
+    fontSize: 16.0,
+    color: Color(AppColors.StoryLikeTitleColor)
+  );
+
+  // 点赞红心字体样式
+  static const LikeHeartTextStyle = TextStyle(
+    fontSize: 18.0, 
+    color: Color(AppColors.LikeHeartColor)
+  );
 }
