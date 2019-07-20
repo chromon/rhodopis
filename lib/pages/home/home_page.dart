@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rhodopis/pages/home/bookshelf_page.dart';
+import 'package:rhodopis/pages/home/me_page.dart';
 import 'package:rhodopis/pages/home/story_page.dart';
 import 'package:rhodopis/widget/appbar_widget.dart';
 
@@ -90,9 +91,7 @@ class _HomePageState extends State<HomePage> {
         ),
         BookshelfPage(),
         StoryPage(),
-        Container(
-          color: Colors.purple,
-        ),
+        MePage(),
     ];
 
     // 处理 appbar

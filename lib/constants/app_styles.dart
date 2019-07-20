@@ -79,7 +79,13 @@ class AppStyles {
 
   // 点赞红心字体样式
   static const LikeHeartTextStyle = TextStyle(
-    fontSize: 18.0, 
+    fontSize: 16.0, 
     color: Color(AppColors.LikeHeartColor)
+  );
+
+  // me page 描述信息字体样式
+  static const FuncDescTextStyle = TextStyle(
+    fontSize: 14.0,
+    color: Color(AppColors.DescColor),
   );
 }

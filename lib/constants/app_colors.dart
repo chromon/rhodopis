@@ -30,4 +30,6 @@ class AppColors {
   static const QuoteBgColor = 0xFFF4F5F7;
   // 点赞红心背景颜色
   static const LikeHeartColor = 0xFFFF6179;
+  // “我”页面 描述信心字体颜色
+  static const DescTextColor = 0xFF727882;
 }
