@@ -88,4 +88,9 @@ class AppStyles {
     fontSize: 14.0,
     color: Color(AppColors.DescColor),
   );
+
+  // func item 标题样式
+  static const FuncItemTitleStyle = TextStyle(
+    fontSize: 16.0,
+  );
 }

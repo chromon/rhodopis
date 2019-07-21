@@ -32,4 +32,16 @@ class AppColors {
   static const LikeHeartColor = 0xFFFF6179;
   // “我”页面 描述信心字体颜色
   static const DescTextColor = 0xFF727882;
+  // 账户图标颜色
+  static const AccountIconColor = 0xFFF96258;
+  // 无限卡图标颜色
+  static const InfiniteCardIconColor = 0xFFEDC38D;
+  // 排行榜图标颜色
+  static const RandingIconColor = 0xFFFC8840;
+  // 关注图标颜色
+  static const FollowIconColor = 0xFFFFBF3B;
+  // 笔记图标颜色
+  static const NoteIconColor = 0xFF6DD45F;
+  // 书单图标颜色
+  static const BookListIconColor = 0xFF1EC7FC;
 }
