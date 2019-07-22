@@ -5,6 +5,7 @@ import 'package:rhodopis/constants/app_routes.dart';
 import 'package:rhodopis/pages/home/home_page.dart';
 import 'package:rhodopis/pages/welcome/login_page.dart';
 import 'package:rhodopis/pages/welcome/splash_page.dart';
+import 'package:rhodopis/pages/me/setting_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.Login: (context) => LoginPage(),
         AppRoutes.Home: (context) => HomePage(),
+        AppRoutes.Setting: (context) => SettingPage(),
       },
     );
   }

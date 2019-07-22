@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:rhodopis/constants/app_constants.dart';
 import 'package:rhodopis/constants/app_styles.dart';
 
-class FuncItemWidget extends StatefulWidget {
+class FuncIconItemWidget extends StatefulWidget {
 
-  const FuncItemWidget({
+  const FuncIconItemWidget({
     @required this.icon,
     @required this.color,
     @required this.title,
@@ -15,26 +15,32 @@ class FuncItemWidget extends StatefulWidget {
     this.showDesc = true,
   });
 
+  // 图标
   final int icon;
 
+  // 图标颜色
   final int color;
 
+  // 标题
   final String title;
 
+  // 主要信息
   final String info;
 
+  // 描述信息
   final String desc;
 
+  // 是否显示描述信息
   final bool showDesc;
 
   // 列表项回调
   final VoidCallback onPressed;
 
   @override
-  _FuncItemWidgetState createState() => _FuncItemWidgetState();
+  _FuncIconItemWidgetState createState() => _FuncIconItemWidgetState();
 }
 
-class _FuncItemWidgetState extends State<FuncItemWidget> {
+class _FuncIconItemWidgetState extends State<FuncIconItemWidget> {
 
 
   @override

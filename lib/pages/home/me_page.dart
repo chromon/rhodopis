@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rhodopis/constants/app_colors.dart';
 
 import 'package:rhodopis/constants/app_styles.dart';
-import 'package:rhodopis/widget/func_item_widget.dart';
+import 'package:rhodopis/widget/func_icon_item_widget.dart';
 
 class MePage extends StatefulWidget {
   @override
@@ -45,7 +45,7 @@ class _MePageState extends State<MePage> {
             ),
             SizedBox(height: 10.0,),
             // 功能栏
-            FuncItemWidget(
+            FuncIconItemWidget(
               icon: 0xe6dc,
               color: AppColors.AccountIconColor,
               title: '账户',
@@ -53,7 +53,7 @@ class _MePageState extends State<MePage> {
               desc: '已购1766本书',
               onPressed: () {},
             ),
-            FuncItemWidget(
+            FuncIconItemWidget(
               icon: 0xe72d,
               color: AppColors.InfiniteCardIconColor,
               title: '无限卡',
@@ -62,7 +62,7 @@ class _MePageState extends State<MePage> {
               onPressed: () {},
             ),
             SizedBox(height: 10.0,),
-            FuncItemWidget(
+            FuncIconItemWidget(
               icon: 0xe6c8,
               color: AppColors.RandingIconColor,
               title: '排行榜',
@@ -70,7 +70,7 @@ class _MePageState extends State<MePage> {
               desc: '17小时28分钟',
               onPressed: () {},
             ),
-            FuncItemWidget(
+            FuncIconItemWidget(
               icon: 0xe600,
               color: AppColors.FollowIconColor,
               title: '关注',
@@ -79,7 +79,7 @@ class _MePageState extends State<MePage> {
               onPressed: () {},
             ),
             SizedBox(height: 10.0,),
-            FuncItemWidget(
+            FuncIconItemWidget(
               icon: 0xe69b,
               color: AppColors.NoteIconColor,
               title: '笔记',
@@ -87,7 +87,7 @@ class _MePageState extends State<MePage> {
               desc: '20个赞 8个评论',
               onPressed: () {},
             ),
-            FuncItemWidget(
+            FuncIconItemWidget(
               icon: 0xe62a,
               color: AppColors.BookListIconColor,
               title: '书单',

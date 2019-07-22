@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:rhodopis/constants/app_styles.dart';
 import 'package:rhodopis/constants/app_constants.dart';
 import 'package:rhodopis/constants/app_colors.dart';
+import 'package:rhodopis/constants/app_routes.dart';
 
 class AppbarWidget {
 
@@ -128,7 +129,9 @@ class AppbarWidget {
                 // size: ,
                 color: const Color(AppColors.ActionsIconColor),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.Setting);
+              },
             ),
           ],
         );

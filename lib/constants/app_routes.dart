@@ -6,4 +6,7 @@ class AppRoutes {
 
   // 主页面
   static const Home = '/home';
+
+  // 设置页面
+  static const Setting = '/setting';
 } 
