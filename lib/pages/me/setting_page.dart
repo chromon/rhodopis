@@ -153,6 +153,25 @@ class _SettingPageState extends State<SettingPage> {
               showRightWidget: false,
               onPressed: () {},
             ),
+            SizedBox(height: 10.0,),
+            FlatButton(
+              onPressed: () {},
+              padding: EdgeInsets.all(16.0),
+              color: Colors.white,
+              child:  Row(
+                children: <Widget>[
+                  // 左边标题及描述信息
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Text('退出登录', style: TextStyle(color: Colors.red),),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

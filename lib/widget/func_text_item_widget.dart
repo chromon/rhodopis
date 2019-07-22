@@ -54,6 +54,7 @@ class _FuncTextItemWidgetState extends State<FuncTextItemWidget> {
       ? Text(widget.desc, style: AppStyles.FuncDescTextStyle,)
       : Container();
 
+    // 右侧 文本或切换按钮
     Widget switchWidget = widget.showSwitch
       ? Container(
         height: 16.0,
@@ -86,26 +87,50 @@ class _FuncTextItemWidgetState extends State<FuncTextItemWidget> {
       ? switchWidget
       : Container();
 
-    return FlatButton(
-      onPressed: widget.onPressed,
-      padding: EdgeInsets.all(16.0),
-      color: Colors.white,
-      child: Row(
-        children: <Widget>[
-          // 左边标题及描述信息
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(widget.title, style: AppStyles.FuncItemTitleStyle,),
-                descWidget,
-              ],
+    // 最终结果，右侧是切换按钮时，与文本不同
+    Widget result = widget.showSwitch
+      ? Container(
+        padding: EdgeInsets.all(16.0),
+        color: Colors.white,
+        child: Row(
+          children: <Widget>[
+            // 左边标题及描述信息
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(widget.title, style: AppStyles.FuncItemTitleStyle,),
+                  descWidget,
+                ],
+              ),
             ),
-          ),
-          // 右侧信息
-          rightWidget,
-        ],
-      ),
-    );
+            // 右侧信息
+            rightWidget,
+          ],
+        ),
+      )
+      : FlatButton(
+        onPressed: widget.onPressed,
+        padding: EdgeInsets.all(16.0),
+        color: Colors.white,
+        child: Row(
+          children: <Widget>[
+            // 左边标题及描述信息
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(widget.title, style: AppStyles.FuncItemTitleStyle,),
+                  descWidget,
+                ],
+              ),
+            ),
+            // 右侧信息
+            rightWidget,
+          ],
+        ),
+      );
+
+    return result;
   }
 }
