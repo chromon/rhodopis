@@ -32,13 +32,13 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
               child: TextField(
                 decoration: new InputDecoration(
                   hintText: '搜索',
-                  hintStyle: TextStyle(fontSize: 16.0),
+                  hintStyle: TextStyle(fontSize: 14.0),
                   prefixIcon: Icon(
                     IconData(
                       0xe60d,
                       fontFamily: AppConstants.IconFontsFamily,
                     ),
-                    size: 18.0,
+                    size: 16.0,
                     color: const Color(AppColors.SearchBarTextColor),
                   ),
                   contentPadding: EdgeInsets.only(top: 5.0, bottom: 5.0, left: 0, right: 0),

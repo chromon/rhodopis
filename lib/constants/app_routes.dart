@@ -9,4 +9,7 @@ class AppRoutes {
 
   // 设置页面
   static const Setting = '/setting';
+
+  // 通知和私信页面
+  static const Message = '/message';
 } 

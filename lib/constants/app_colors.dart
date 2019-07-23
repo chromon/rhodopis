@@ -44,4 +44,6 @@ class AppColors {
   static const NoteIconColor = 0xFF6DD45F;
   // 书单图标颜色
   static const BookListIconColor = 0xFF1EC7FC;
+  // tab 未选中字体颜色
+  static const TabUnSelectedColor = 0xFF858C96;
 }

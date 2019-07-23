@@ -113,7 +113,9 @@ class AppbarWidget {
               ),
               color: const Color(AppColors.ActionsIconColor),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, AppRoutes.Message);
+            },
           ),
           elevation: 0.0,
           brightness: Brightness.light,

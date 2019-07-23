@@ -62,9 +62,9 @@ class _FuncTextItemWidgetState extends State<FuncTextItemWidget> {
           value: check,
           activeColor: Color(AppColors.PrimaryColor),
           onChanged: (bool val) {
-              this.setState(() {
-                  check = !check;
-              });
+            this.setState(() {
+                check = !check;
+            });
           },
         ),
       )

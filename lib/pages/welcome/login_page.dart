@@ -56,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: MaterialButton(
                           color: Color(AppColors.PrimaryColor),
                           height: 54.0,
-                          child: Text('微信登录', style: TextStyle(fontSize: 18.0, color: Colors.white),),
+                          child: Text('微信登录', style: TextStyle(fontSize: 16.0, color: Colors.white),),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.all(Radius.circular(10.0)),
                           ),

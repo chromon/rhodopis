@@ -14,7 +14,7 @@ class AppStyles {
 
   // 描述信息样式
   static const DescTextStyle = TextStyle(
-    fontSize: 18.0,
+    fontSize: 16.0,
     color: Color(AppColors.DescColor),
     decoration: TextDecoration.none,
     fontWeight: FontWeight.normal
@@ -30,7 +30,7 @@ class AppStyles {
 
   // 链接样式
   static const LinkTextStyle = TextStyle(
-    fontSize: 18.0,
+    fontSize: 16.0,
     color: Color(AppColors.PrimaryColor)
   );
 
@@ -50,7 +50,7 @@ class AppStyles {
 
   // 搜索框字体样式
   static const SearchBarTextStyle = TextStyle(
-    fontSize: 16.0,
+    fontSize: 14.0,
     color: Color(AppColors.SearchBarTextColor),
   );
 
