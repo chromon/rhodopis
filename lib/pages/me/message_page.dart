@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:rhodopis/constants/app_constants.dart';
 import 'package:rhodopis/constants/app_colors.dart';
 import 'package:rhodopis/widget/private_message_item_widget.dart';
+import 'package:rhodopis/widget/notification_item_widget.dart';
 
 class MessagePage extends StatefulWidget {
   @override
@@ -75,7 +76,28 @@ class _MessagePageState extends State<MessagePage> with SingleTickerProviderStat
           //TabBarView 默认支持手势滑动，若要禁止设置 NeverScrollableScrollPhysics
           physics: NeverScrollableScrollPhysics(),
           children: <Widget>[
-            Center(child:Text('view1')),
+            Center(
+              child: Column(
+                children: <Widget>[
+                  NotificationItemWidget(
+                    avatarPath: 'assets/images/avatar_default.png',
+                    name: 'ellery',
+                    date: '7月18日 18:23',
+                    info: '赞了你的想法',
+                    content: '这个故事讲得真好。',
+                    onPressed: () {},
+                  ),
+                  NotificationItemWidget(
+                    avatarPath: 'assets/images/avatar_default.png',
+                    name: 'ellery',
+                    date: '7月18日 18:23',
+                    info: '赞了你的想法',
+                    content: '这个故事讲得真好。',
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ),
             Center(
               child: Column(
                 children: <Widget>[

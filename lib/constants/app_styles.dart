@@ -93,4 +93,10 @@ class AppStyles {
   static const FuncItemTitleStyle = TextStyle(
     fontSize: 16.0,
   );
+
+  // 通知标题字体样式
+  static const NotificationTitleStyle = TextStyle(
+    fontSize: 16.0,
+    color: Color(AppColors.DescTextColor),
+  );
 }
