@@ -97,7 +97,7 @@ class _InteractionItemWidgetState extends State<InteractionItemWidget> {
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
-                                  color: Color(AppColors.StoryLikeColor),
+                                  color: Color(AppColors.DividerColor),
                                   width: 1.0,
                                 ),
                               ),
