@@ -25,7 +25,7 @@ class _BookshelfPageState extends State<BookshelfPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            SearchBarWidget(),
+            SearchBarWidget('搜索', '阅读记录'),
             Expanded(
               child: Container(
                 padding: EdgeInsets.all(10.0),

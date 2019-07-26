@@ -6,6 +6,16 @@ import 'package:rhodopis/constants/app_styles.dart';
 
 // 搜索框
 class SearchBarWidget extends StatefulWidget {
+
+  const SearchBarWidget(
+    this.hintText,
+    this.btnText,
+  );
+
+  final String hintText;
+
+  final String btnText;
+
   @override
   _SearchBarWidgetState createState() => _SearchBarWidgetState();
 }
@@ -31,19 +41,20 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
               ),
               child: TextField(
                 decoration: new InputDecoration(
-                  hintText: '搜索',
+                  hintText: widget.hintText,
                   hintStyle: TextStyle(fontSize: 14.0),
                   prefixIcon: Icon(
                     IconData(
                       0xe60d,
                       fontFamily: AppConstants.IconFontsFamily,
                     ),
-                    size: 16.0,
+                    size: 14.0,
                     color: const Color(AppColors.SearchBarTextColor),
                   ),
                   contentPadding: EdgeInsets.only(top: 5.0, bottom: 5.0, left: 0, right: 0),
                   // 输入框背景颜色
                   fillColor: Color(AppColors.SerchBarBgColor),
+                  // fillColor: Colors.lightBlue,
                   filled: true,
                   // 输入框边框
                   border: InputBorder.none,
@@ -55,7 +66,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
           Container(
             height: 30.0,
             child: FlatButton(
-              child: Text('阅读记录', style: AppStyles.SearchBarTextStyle,),
+              child: Text(widget.btnText, style: AppStyles.SearchBarTextStyle,),
               onPressed: () {},
             ),
           ),

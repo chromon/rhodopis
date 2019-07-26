@@ -4,6 +4,7 @@ import 'package:rhodopis/constants/app_styles.dart';
 import 'package:rhodopis/constants/app_constants.dart';
 import 'package:rhodopis/constants/app_colors.dart';
 import 'package:rhodopis/constants/app_routes.dart';
+import 'package:rhodopis/widget/search_bar_widget.dart';
 
 class AppbarWidget {
 
@@ -20,7 +21,8 @@ class AppbarWidget {
       case 0:
         // 发现页
         _appbar = AppBar(
-          title: Text('发现', style: AppStyles.TitleTextStyle,),
+          // title: Text('发现', style: AppStyles.TitleTextStyle,),
+          title: SearchBarWidget('', '书城'),
           elevation: 0.0,
           brightness: Brightness.light,
           backgroundColor: Colors.white,
