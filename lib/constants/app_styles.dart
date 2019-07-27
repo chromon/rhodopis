@@ -73,7 +73,7 @@ class AppStyles {
 
   // 引用内容字体样式
   static const QuoteContentStyle = TextStyle(
-    fontSize: 16.0,
+    fontSize: 14.0,
     color: Color(AppColors.StoryLikeTitleColor)
   );
 

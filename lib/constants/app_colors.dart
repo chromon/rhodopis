@@ -47,5 +47,5 @@ class AppColors {
   // tab 未选中字体颜色
   static const TabUnSelectedColor = 0xFF858C96;
   // 分隔线颜色
-  static const DividerColor = 0xFFCACCCE;
+  static const DividerColor = 0xFFD4D6D8;
 }

@@ -29,7 +29,7 @@ class _InteractionItemWidgetState extends State<InteractionItemWidget> {
                 size: 14.0,
                 color: const Color(AppColors.StoryLikeTitleColor),
               ),
-              SizedBox(width: 10.0,),
+              SizedBox(width: 5.0,),
               // 点赞用户
               RawMaterialButton(
                 materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -38,7 +38,7 @@ class _InteractionItemWidgetState extends State<InteractionItemWidget> {
                 child: Text('Test', style: AppStyles.StoryLikeNameStyle,),
                 onPressed: () {},
               ),
-              SizedBox(width: 10.0,),
+              SizedBox(width: 5.0,),
               Text('赞过', style: AppStyles.StoryLikedStyle,),
               Expanded(
                 child: Row(
@@ -58,7 +58,7 @@ class _InteractionItemWidgetState extends State<InteractionItemWidget> {
               ),
             ],
           ),
-          SizedBox(height: 12.0,),
+          SizedBox(height: 10.0,),
           // 划线评论头像，用户名
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,8 +67,8 @@ class _InteractionItemWidgetState extends State<InteractionItemWidget> {
                 borderRadius: BorderRadius.circular(20.0),
                 child: Image.asset(
                   'assets/images/avatar_default.png',
-                  width: 24.0,
-                  height: 24.0,
+                  width: 20.0,
+                  height: 20.0,
                 ),
               ),
               SizedBox(width: 10.0,),
@@ -98,7 +98,7 @@ class _InteractionItemWidgetState extends State<InteractionItemWidget> {
                               border: Border(
                                 bottom: BorderSide(
                                   color: Color(AppColors.DividerColor),
-                                  width: 1.0,
+                                  width: 0.5,
                                 ),
                               ),
                             ),
@@ -194,8 +194,8 @@ class _InteractionItemWidgetState extends State<InteractionItemWidget> {
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
-                                  color: Color(AppColors.StoryLikeColor),
-                                  width: 1.0,
+                                  color: Color(AppColors.DividerColor),
+                                  width: 0.5,
                                 ),
                               ),
                             ),
@@ -225,7 +225,7 @@ class _InteractionItemWidgetState extends State<InteractionItemWidget> {
                           ),
                           // 评论内容
                           Container(
-                            padding: EdgeInsets.all(10.0),
+                            padding: EdgeInsets.only(top: 10.0),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
