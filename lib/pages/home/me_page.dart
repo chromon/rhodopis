@@ -78,6 +78,14 @@ class _MePageState extends State<MePage> {
               desc: '已关注1人',
               onPressed: () {},
             ),
+            FuncIconItemWidget(
+              icon: 0xe611,
+              color: AppColors.ReadTeamColor,
+              title: '读书小队',
+              info: '3人成队',
+              desc: '共攒积分兑大奖',
+              onPressed: () {},
+            ),
             SizedBox(height: 10.0,),
             FuncIconItemWidget(
               icon: 0xe69b,

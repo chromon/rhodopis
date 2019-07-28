@@ -37,9 +37,11 @@ class AppColors {
   // 无限卡图标颜色
   static const InfiniteCardIconColor = 0xFFEDC38D;
   // 排行榜图标颜色
-  static const RandingIconColor = 0xFFFC8840;
+  static const RandingIconColor = 0xFFFC6357;
   // 关注图标颜色
-  static const FollowIconColor = 0xFFFFBF3B;
+  static const FollowIconColor = 0xFFFB9047;
+  // 读书小队图标颜色
+  static const ReadTeamColor = 0xFFFFBC2F;
   // 笔记图标颜色
   static const NoteIconColor = 0xFF6DD45F;
   // 书单图标颜色
