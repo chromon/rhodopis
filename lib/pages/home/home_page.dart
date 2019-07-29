@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:rhodopis/pages/home/bookshelf_page.dart';
 import 'package:rhodopis/pages/home/me_page.dart';
 import 'package:rhodopis/pages/home/story_page.dart';
+import 'package:rhodopis/pages/home/discover_page.dart';
 import 'package:rhodopis/widget/appbar_widget.dart';
 
 import 'package:rhodopis/widget/navigation_item_widget.dart';
@@ -86,9 +87,7 @@ class _HomePageState extends State<HomePage> {
     _pageController = PageController(initialPage: _currentIndex);
     // 初始化导航页面内容
     _pageViews = [
-        Container(
-          color: Colors.lightBlue,
-        ),
+        DiscoverPage(),
         BookshelfPage(),
         StoryPage(),
         MePage(),
