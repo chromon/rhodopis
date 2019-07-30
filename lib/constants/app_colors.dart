@@ -50,4 +50,6 @@ class AppColors {
   static const TabUnSelectedColor = 0xFF858C96;
   // 分隔线颜色
   static const DividerColor = 0xFFD4D6D8;
+  // 发现页背景颜色
+  static const DiscoverBgColor = 0xFFECEDEF;
 }
