@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:rhodopis/constants/app_colors.dart';
+import 'package:rhodopis/constants/app_constants.dart';
+
 class PageSelectorWidget extends StatelessWidget {
 
   const PageSelectorWidget({this.texts});
@@ -15,53 +18,48 @@ class PageSelectorWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final TabController controller = DefaultTabController.of(context);
-    final Color color = Theme.of(context).accentColor;
-
-    return SafeArea(
-      top: false,
-      bottom: false,
+    return Container(
       child: Column(
         children: <Widget>[
-          Container(
-            margin: const EdgeInsets.only(top: 16.0),
-            child: Row(
-              children: <Widget>[
-                IconButton(
-                  icon: const Icon(Icons.chevron_left),
-                  color: color,
-                  onPressed: () { _handleArrowButtonPress(context, -1); },
-                  tooltip: 'Page back',
-                ),
-                TabPageSelector(controller: controller),
-                IconButton(
-                  icon: const Icon(Icons.chevron_right),
-                  color: color,
-                  onPressed: () { _handleArrowButtonPress(context, 1); },
-                  tooltip: 'Page forward',
-                ),
-              ],
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            ),
-          ),
           Expanded(
-            child: IconTheme(
-              data: IconThemeData(
-                size: 128.0,
-                color: color,
-              ),
-              child: TabBarView(
-                children: texts.map<Widget>((String text) {
-                  return Container(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Card(
-                      child: Center(
-                        child: Text(text),
+            child: Stack(
+              children: <Widget>[
+                TabBarView(
+                  children: texts.map<Widget>((String text) {
+                    return Container(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Card(
+                        elevation: 0.0,
+                        child: Center(
+                          child: Text(text),
+                        ),
+                      ),
+                    );
+                  }).toList(),
+                ),
+                Positioned(
+                  right: 5.0,
+                  bottom: 18.0,
+                  child: FlatButton(
+                    padding: EdgeInsets.all(22.0),
+                    onPressed: () {_handleArrowButtonPress(context, 1);},
+                    child: Icon(
+                      IconData(
+                        0xe60e,
+                        fontFamily: AppConstants.IconFontsFamily,
+                      ),
+                      size: 14.0,
+                      color: Color(AppColors.DescColor),
+                    ),
+                    color: Color(AppColors.FloatingBtnColor),
+                    shape: CircleBorder(
+                      side: BorderSide(
+                        color: Color(AppColors.FloatingBtnColor),
                       ),
                     ),
-                  );
-                }).toList(),
-              ),
+                  ),
+                ),
+              ],
             ),
           ),
         ],

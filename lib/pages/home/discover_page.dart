@@ -24,11 +24,14 @@ class _DiscoverPageState extends State<DiscoverPage> {
             margin: EdgeInsets.only(top: 25.0),
             child: SearchBarWidget('挪威的森林', '书城'),
           ),
-          Container(
-            height: 200.0,
-            child: DefaultTabController(
-              length: texts.length,
-              child: PageSelectorWidget(texts: texts),
+          Expanded(
+            child: Container(
+              // margin: EdgeInsets.only(top: 20.0, bottom: 20.0),
+              // height: 200.0,
+              child:DefaultTabController(
+                length: texts.length,
+                child: PageSelectorWidget(texts: texts),
+              ), 
             ),
           ),
         ],

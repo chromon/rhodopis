@@ -52,4 +52,6 @@ class AppColors {
   static const DividerColor = 0xFFD4D6D8;
   // 发现页背景颜色
   static const DiscoverBgColor = 0xFFECEDEF;
+  // Floating action button colors
+  static const FloatingBtnColor = 0xFFF5F5F5;
 }
