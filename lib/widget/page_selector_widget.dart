@@ -5,14 +5,14 @@ import 'package:rhodopis/constants/app_constants.dart';
 
 class PageSelectorWidget extends StatelessWidget {
 
-  const PageSelectorWidget({this.texts});
+  const PageSelectorWidget({this.widgets});
 
-  final List<String> texts;
+  final List<Widget> widgets;
 
   void _handleArrowButtonPress(BuildContext context, int delta) {
     final TabController controller = DefaultTabController.of(context);
     if (!controller.indexIsChanging)
-      controller.animateTo((controller.index + delta).clamp(0, texts.length - 1));
+      controller.animateTo((controller.index + delta).clamp(0, widgets.length - 1));
   }
 
   @override
@@ -25,14 +25,15 @@ class PageSelectorWidget extends StatelessWidget {
             child: Stack(
               children: <Widget>[
                 TabBarView(
-                  children: texts.map<Widget>((String text) {
+                  children: widgets.map<Widget>((Widget widget) {
                     return Container(
                       padding: const EdgeInsets.all(12.0),
                       child: Card(
                         elevation: 0.0,
-                        child: Center(
-                          child: Text(text),
-                        ),
+                        child: widget,
+                        // Center(
+                        //   child: 
+                        // ),
                       ),
                     );
                   }).toList(),

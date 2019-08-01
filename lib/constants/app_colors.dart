@@ -54,4 +54,6 @@ class AppColors {
   static const DiscoverBgColor = 0xFFECEDEF;
   // Floating action button colors
   static const FloatingBtnColor = 0xFFF5F5F5;
+  // 读书成就字体颜色
+  static const ReadingAchieveColor = 0xFFE1B560;
 }

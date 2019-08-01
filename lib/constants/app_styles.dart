@@ -99,4 +99,30 @@ class AppStyles {
     fontSize: 16.0,
     color: Color(AppColors.DescTextColor),
   );
+
+  // 读书排行标题样式
+  static const ReadingRankTitleStyle = TextStyle(
+    fontSize: 24.0,
+  );
+
+  // 读书排行描述信息样式
+  static const ReadingRankDescStyle = TextStyle(
+    fontSize: 14.0,
+    color: Color(AppColors.DescTextColor),
+  );
+
+  // 读书排行普通条目标题样式
+  static const ReadingRankNomalStyle = TextStyle(
+    fontSize: 16.0,
+  );
+
+  // 读书成就字体样式
+  static const ReadingAchieveTitleStyle = TextStyle(
+    fontSize: 18.0,
+    color: Color(AppColors.ReadingAchieveColor),
+  );
+  static const ReadingAchieveDescStyle = TextStyle(
+    fontSize: 14.0,
+    color: Color(AppColors.ReadingAchieveColor),
+  );
 }
